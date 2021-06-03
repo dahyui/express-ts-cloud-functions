@@ -1,7 +1,7 @@
-import { sample } from './sample';
-import { auth } from './auth';
-import { IRoutes } from '../interfaces';
+import { sample } from './sample'
+import { auth } from './auth'
+import { IRoutes } from '../interfaces'
 
-const baseArray: IRoutes[] = [];
+const baseArray: IRoutes[] = []
 
-export const routes = baseArray.concat(sample, auth);
+export const routes = baseArray.concat(sample, auth)

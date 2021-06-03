@@ -1,4 +1,4 @@
-## express-ts-cloud-functions
+## express-ts-firebase-functions
 This is a template for firebase cloud functions.
 
 ### Reference
@@ -11,7 +11,7 @@ This is a template for firebase cloud functions.
 
 ## Requirements
 - Firebase CLI
-- Node 10.17.0
+- Node 12+
 - tsc
 
 ## Firebase Project Setting
@@ -27,6 +27,9 @@ Then, you can access the functions via this URL.
 > http://localhost:5000/your-firebase-project-id/your-firebase-project-region/api/userinfo/userinfo
 
 ## Directory Structure
+### Controllers
+Controllers to handle API functionality
+
 ### interfaces
 TypeScript Interfaces used globally
 
@@ -36,12 +39,15 @@ Express middleware created by yourself
 ### models
 Database models adjust to table structure
 
-### repositories
-Database CURD and external API call.
-
 ### routes
 HTTP Request handlers.
 One endpoint is in one file to divide names for Firebase Cloud Functions.
+
+### scheduler
+Firebase schedulers
+
+### utils
+Utility functions
 
 *How to Export router*
 ```typescript
@@ -61,8 +67,8 @@ router.post('/', (req: Request, res: Response) => {
 });
 ```
 
-It is recommended to define path as '/'.  
-Because all endpoints will be exported to Firebase Cloud Functions indevidually with defferent names.
+It is recommended to define path as '/'.
+Because all endpoints will be exported to Firebase Cloud Functions individually with different names.
 
 ### services
 Business Logic
