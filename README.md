@@ -30,6 +30,9 @@ Then, you can access the functions via this URL.
 ### Controllers
 Controllers to handle API functionality
 
+### Firestore
+Firestore triggers are created here
+
 ### interfaces
 TypeScript Interfaces used globally
 
@@ -44,7 +47,7 @@ HTTP Request handlers.
 One endpoint is in one file to divide names for Firebase Cloud Functions.
 
 ### scheduler
-Firebase schedulers
+Firebase schedulers are created here
 
 ### utils
 Utility functions
